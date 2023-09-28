@@ -17,9 +17,9 @@ Expected pipeline:
     - Vessel Heading
     - Speed, Water Referenced
     - Position, Rapid Update
-    - COG & SOG, Rapid Update (Course Over Ground and Speed Over Ground)
-    - GNSS Position Data
     - Wind Data
+
+    1bis) In a second time we could add COG & SOG (Course Over Ground and Speed Over Ground) as well as GNSS Position Data
 
 2) Bin data together by 1s (or 5s ?), where necessary
 3) Plot:
