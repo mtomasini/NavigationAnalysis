@@ -6,7 +6,7 @@
 
 In this repository, I analyse the data collected during various sessions of navigation in Brittany, France. During the sessions, different tests were performed, from towing tests to measure the drag resistance of the hull of different vessels in the water, to navigation trials (A-B straight line navigation).
 
-The data was collected and produced through the Actisense / EBL tooling and software, then transformed into CSV files and finally analysed. For the moment being, the data won't be uploaded to this repository. CSV files are further analysed in Python using `pandas`.
+The data was collected and produced through the Actisense / EBL tooling and software, then transformed into CSV files and finally analysed. For the moment being, the data won't be uploaded to this repository. CSV files are further analysed in Python using `pandas` and `movingpandas`.
 
 ## Tasks / planning of work
 
@@ -27,4 +27,12 @@ Expected pipeline:
     - course on map (interactive? How do we select points of departure and arrival?)
     - Plot winds on same map
     - Plot avg speed on selected transect
-    - Plot avg direction on selected transect
+    - Plot avg vessel heading on selected transect (polar plot)
+
+### Notes
+
+For `movingpandas` one should create a table with data in the following format:
+
+| X | Y | timestamp |
+|---|---|-----------|
+| x.xxxx | y.yyyyy | yyyy-mm-dd hh:mm:ss.00000 |
