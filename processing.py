@@ -1,6 +1,14 @@
 import re
+import pandas as pd
 
-
+def concatenate_datasets(list_of_datasets):
+    # create first dataframe
+    data = pd.read_csv(list_of_datasets[0], encoding='windows-1252')
+    for dataset in list_of_datasets[1:]:
+        next_dataset = pd.read_csv(dataset, encoding='windows-1252')
+        data = pd.concat([data, next_dataset], ignore_index=True)
+    
+    return data    
 
 
 def coordinate_conversion(coordinate: str) -> float:

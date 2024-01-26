@@ -3,6 +3,8 @@
 > Authors: Boel K. Bengtsson, Björn Bengtsson, Alvaro Montenegro, **Matteo Tomasini**
 >
 > Date: 28.09.2023
+>
+> Last modified: 02.01.2024
 
 In this repository, I analyse the data collected during various sessions of navigation in Brittany, France. During the sessions, different tests were performed, from towing tests to measure the drag resistance of the hull of different vessels in the water, to navigation trials (A-B straight line navigation).
 
